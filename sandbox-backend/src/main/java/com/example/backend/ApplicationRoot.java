@@ -20,6 +20,7 @@ public class ApplicationRoot implements ApplicationRunner {
     SpringApplication.run(ApplicationRoot.class, args);
   }
 
-  @Override
-  public void run(ApplicationArguments args) {}
+  public void run(ApplicationArguments args) {
+    LOGGER.info("Hello World from run.");
+  }
 }

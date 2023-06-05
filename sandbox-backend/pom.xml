@@ -10,35 +10,18 @@
     </parent>
 
     <artifactId>sandbox-backend</artifactId>
-    <packaging>jar</packaging>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start.class>com.example.backend.ApplicationRoot</start.class>
-    </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>example</artifactId>
-            <version>${project.version}</version>
-            <scope>compile</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <executable>true</executable>
-                    <mainClass>${start.class}</mainClass>
-                    <layout>JAR</layout>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>
